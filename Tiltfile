@@ -18,7 +18,7 @@ k8s_custom_deploy(
     ]
 )
 
-allow_k8s_contexts('tkg-tap1-cls-admin@tkg-tap1-cls')
+allow_k8s_contexts('guy-tap-demo-admin@guy-tap-demo')
 
 k8s_resource('hungry-panda', port_forwards=["8080:8080"],
             extra_pod_selectors=[{'carto.run/workload-name': 'hungry-panda', 'app.kubernetes.io/component': 'run'}])
