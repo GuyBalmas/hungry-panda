@@ -9,6 +9,8 @@ metadata:
     backstage.io/domain: apps
     backstage.io/techdocs-ref: dir:.
     backstage.io/kubernetes-label-selector: app.kubernetes.io/part-of=hungry-panda
+    kafka.apache.org/consumer-groups: guy-tap-demo/test-consumer
+    #kafka.apache.org/dashboard-urls: cluster-name/consumer-group-name/dashboard-url
   links:
     - url: https://hungry-panda.apps.guy-demo-tap.terasky.demo/v1/
       name: Home
