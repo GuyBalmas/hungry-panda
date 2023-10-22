@@ -37,6 +37,17 @@ public class HelloController {
 				pandaImagePath
 		);
 	}
+
+	@GetMapping("/welcome")
+	public String welcome(){
+		return HtmlTemplate.htmlLandingPage(
+				"Welcome",
+				"",
+				"",
+				pandaImagePath
+		);
+	}
+
 //
 //	@GetMapping("/coffee")
 //	public String coffee(){
