@@ -38,15 +38,15 @@ public class HelloController {
 		);
 	}
 
-	@GetMapping("/welcome")
-	public String welcome(){
-		return HtmlTemplate.htmlLandingPage(
-				"Welcome",
-				"yum",
-				"",
-				pandaImagePath
-		);
-	}
+//	@GetMapping("/welcome")
+//	public String welcome(){
+//		return HtmlTemplate.htmlLandingPage(
+//				"Welcome",
+//				"yum",
+//				"",
+//				pandaImagePath
+//		);
+//	}
 
 //
 //	@GetMapping("/coffee")
