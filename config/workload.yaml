@@ -3,10 +3,15 @@ kind: Workload
 metadata:
   name: hungry-panda
   labels:
-    apps.tanzu.vmware.com/workload-type: web
+    #apps.tanzu.vmware.com/workload-type: web
     apps.tanzu.vmware.com/has-tests: "true"
     app.kubernetes.io/part-of: hungry-panda
     apis.apps.tanzu.vmware.com/register-api: "true"
+    #Carvel Package Supply Chains
+    apps.tanzu.vmware.com/carvel-package-workflow: "true"
+    apps.tanzu.vmware.com/workload-type: server
+    #Flagger
+    app.kubernetes.io/name: hungry-panda
 spec:
   build:
     env:
@@ -48,5 +53,5 @@ spec:
   source:
     git:
       ref:
-        branch: master
+        branch: guy-tap-demo-1.6
       url: https://github.com/GuyBalmas/hungry-panda.git
