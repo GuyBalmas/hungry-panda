@@ -42,7 +42,7 @@ public class HelloController {
 	public String welcome(){
 		return HtmlTemplate.htmlLandingPage(
 				"Welcome",
-				"",
+				"yum",
 				"",
 				pandaImagePath
 		);
